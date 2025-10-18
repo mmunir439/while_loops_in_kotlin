@@ -33,11 +33,22 @@ fun grade(){
 
 
 }
+fun semester(){
+    var total_credit_hours_in_bscs=136;
+    println("how much you have attempted credit hours uptill now");
+    var you_attempted_credit_hours=readLine()!!.toInt();
+    var each_semester_credit_hours=17;
+    var reaming_credit_hours=total_credit_hours_in_bscs-you_attempted_credit_hours;
+    var semester=you_attempted_credit_hours/each_semester_credit_hours;
+    println("you are in semester $semester and you have attempted credit hours $you_attempted_credit_hours and your remaining credit_hours are ${reaming_credit_hours}")
+}
 fun main(){
-    var x=1;
+//    var x=1;
+    var x=3;
     while(x in 1..3) {
         age();
         grade();
+        semester()
         x++;
     }
 }
