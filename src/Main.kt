@@ -1,6 +1,4 @@
 //Q1) find the age of the student for vote checking
-//Q2) find the grades of the student
-//Q3) find the semester of the student
 fun age(){
     println("kindly enter your name");
     val name = readLine()!!   // <-- input as string
@@ -12,6 +10,7 @@ fun age(){
         else->println("${name} kindly wait for the election to starts")
     }
 }
+//Q2) find the grades of the student
 fun grade(){
     println("enter your name")
     var name=readLine()!!;
@@ -33,6 +32,7 @@ fun grade(){
 
 
 }
+//Q3) find the semester of the student
 fun semester(){
     var total_credit_hours_in_bscs=136;
     println("how much you have attempted credit hours uptill now");
